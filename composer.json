@@ -15,6 +15,6 @@
     }
   ],
   "require": {
-    "keaixiaou/zphp": "dev-master"
+    "xcorp1986/zphp": "dev-master"
   }
 }
