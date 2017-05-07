@@ -8,12 +8,12 @@
       "homepage": "https://github.com/keaixiaou/"
     }
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/keaixiaou/zphp"
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
     }
-  ],
+  },
   "require": {
     "xcorp1986/zphp": "dev-master"
   }
