@@ -7,7 +7,7 @@
  */
 
 return [
-  'controller' => [
-      'homeinx' => controller\Home\Index::class,
-  ]
+    'controller' => [
+        'homeinx' => controller\Home\Index::class,
+    ],
 ];

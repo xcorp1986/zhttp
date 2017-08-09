@@ -6,15 +6,14 @@
  * Time: 下午6:25
  */
 
-return array(
-    'cache'=>array(
+return [
+    'cache' => [
         /*异步非阻塞这里的参数无效*/
-        'adapter' => 'Redis',
+        'adapter'  => 'Redis',
         'pconnect' => true,
-        'host' => '127.0.0.1',
-        'port' => 6379,
-        'timeout' => 0,
-        'pconnect' => 1,
-        'prefix' => 'zchat'
-    )
-);
+        'host'     => '127.0.0.1',
+        'port'     => 6379,
+        'timeout'  => 0,
+        'prefix'   => 'zchat',
+    ],
+];

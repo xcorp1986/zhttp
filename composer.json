@@ -1,6 +1,7 @@
 {
   "name": "xcorp1986/zhttp",
   "description": "a asyn php framework",
+  "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
     {

@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0bb5d862d8cf6074ce315cafef5b0f4a",
+    "packages": [
+        {
+            "name": "xcorp1986/zphp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xcorp1986/zphp.git",
+                "reference": "250a8f0bf97c460f48d35e4e056e613ab68ed7bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/xcorp1986/zphp/250a8f0bf97c460f48d35e4e056e613ab68ed7bd.zip",
+                "reference": "250a8f0bf97c460f48d35e4e056e613ab68ed7bd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-swoole": ">=1.8.0,<2.0.0",
+                "php": ">=7.1.0"
+            },
+            "suggest": {
+                "ext-apc": "*",
+                "ext-memcache": "*",
+                "ext-memcached": "*",
+                "ext-mongo": "*",
+                "ext-pdo": "*",
+                "ext-redis": "*",
+                "ext-xcache": "*",
+                "ext-yac": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZPHP\\": "ZPHP"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "huaerjie",
+                    "email": "286252682@qq.com",
+                    "homepage": "https://github.com/keaixiaou"
+                }
+            ],
+            "description": "Asynchronous non-blocking framework based on ZPHP transformation",
+            "time": "2017-05-07 15:32:03"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "xcorp1986/zphp": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

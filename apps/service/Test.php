@@ -8,11 +8,14 @@
 
 namespace service;
 
-class Test{
-    public function test(){
+class Test
+{
+    public function test()
+    {
         $sql = 'select * from admin_user where id=1';
         $data['sql'] = $sql;
-        $data['info'] = yield table('admin_user')->where(['id'=>1])->find();
+        $data['info'] = yield table('admin_user')->where(['id' => 1])->find();
+
         return $data;
     }
 }

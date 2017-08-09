@@ -1,4 +1,8 @@
 <?php
+
+use ZPHP\Cache\Factory;
+use ZPHP\Core\Db;
+
 /**
  * Created by PhpStorm.
  * User: zhaoye
@@ -7,28 +11,33 @@
  */
 
 
-function table($tableName){
-    return \ZPHP\Core\Db::getInstance()->table($tableName);
+function table($tableName)
+{
+    return Db::getInstance()->table($tableName);
 }
 
-function collection($collectionName){
-    return \ZPHP\Core\Db::collection($collectionName);
+function collection($collectionName)
+{
+    return Db::collection($collectionName);
 }
 
-function cache($key, $value='', $expire=3600){
-    $cache = \ZPHP\Cache\Factory::getInstance();
-    if($value===null){
+function cache($key, $value = '', $expire = 3600)
+{
+    $cache = Factory::getInstance();
+    if ($value === null) {
         return $cache->delete($key);
     }
-    if('' === $value){
+    if ('' === $value) {
         return $cache->get($key);
     }
+
     return $cache->set($key, $value, $expire);
 }
 
 
-function url($str){
-    if($str[0]!='/'){
+function url($str)
+{
+    if ($str[0] != '/') {
         $str = '/'.$str;
     }
     echo $str;

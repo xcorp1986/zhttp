@@ -6,12 +6,14 @@
  * Time: 下午5:49
  */
 
+use ZPHP\Core\App;
+
 return [
     'route'=>
     [
         'ANY' => [
             '/Test/{id}' => function($id){
-                return \ZPHP\Core\App::model('test')->getUserById($id);
+                return App::model('test')->getUserById($id);
             },
         ],
         'POST'  => [
